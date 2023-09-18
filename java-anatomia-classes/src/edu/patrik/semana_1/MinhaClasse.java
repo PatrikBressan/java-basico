@@ -1,3 +1,4 @@
+package edu.patrik.semana_1;
 public class MinhaClasse {
     public static void main(String [] args){
         String meuNome = "Patrik";
@@ -14,11 +15,13 @@ public class MinhaClasse {
         String nomeCompleto = nomeCompleto(nomeUm, nomeDois);
 
         System.out.println(nomeCompleto);
+        System.out.println(anoFabricacao);
 
         /* int num1 = 5;
         int num2 = 8;
         int resultado = somar(num1, num2); */
         System.out.println(somar(5, 17));
+        System.out.println("Final do Programa!");
     }
 
     public static String nomeCompleto(String primeiroNome, String segundoNome){
