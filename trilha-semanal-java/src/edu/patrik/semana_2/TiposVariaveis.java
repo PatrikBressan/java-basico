@@ -29,6 +29,7 @@ public class TiposVariaveis {
         // Problema: short numeroCurto2 = numeroNormal;
         // Solução: casting
         short numeroCurto2 = (short) numeroNormal;
+        System.out.println(numeroCurto2);
 
         //Constantes: precisa iniciar com "final"
         final double VALOR_PI = 3.14;
