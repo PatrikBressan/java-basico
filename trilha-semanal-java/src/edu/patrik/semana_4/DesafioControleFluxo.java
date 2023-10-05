@@ -1,0 +1,32 @@
+package edu.patrik.semana_4;
+
+import java.util.Scanner;
+
+public class DesafioControleFluxo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int parametroUm = sc.nextInt();
+        int parametroDois = sc.nextInt();
+
+        try{
+            //Chamando o método contendo a lógica de contagem
+            contar(parametroUm, parametroDois);
+        }catch(ParametrosInvalidosException exception){
+            //imprimir a mensagem: o segundo parâmetro deve ser maior que o primeiro
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro!");
+        }
+        sc.close();
+    }
+
+    static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+        //Validar se parametroUm é maior que parametroDois e lançar a exceção
+        if(parametroUm > parametroDois)
+            throw new ParametrosInvalidosException();
+        
+        int contagem = parametroDois - parametroUm;
+        //Realizar o For para imprimir os números com base na variável contagem
+        for(int contador=1; contador<=contagem; contador++)
+            System.out.println("Impressão no valor: " + contador);
+    }
+}
