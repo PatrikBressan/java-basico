@@ -1,4 +1,4 @@
-package edu.patrik.semana_5;
+package edu.patrik.semana_5.lanchonete.area_cliente;
 
 public class Cliente {
     public void escolherLanche() {
