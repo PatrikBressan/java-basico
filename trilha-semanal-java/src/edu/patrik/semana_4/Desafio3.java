@@ -7,12 +7,8 @@ public class Desafio3 {
         Scanner leitor = new Scanner(System.in);
         int C = leitor.nextInt();
         String nome;
-        int N;
-
         for (int i=0; i<C; i++){
             nome = leitor.next();
-            N = leitor.nextInt();
-
             if(nome.equals("Thor"))
                 System.out.println("Y");
             else
