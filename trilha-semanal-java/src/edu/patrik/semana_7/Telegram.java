@@ -1,5 +1,15 @@
 package edu.patrik.semana_7;
 
-public class Telegram extends ServicoPai{
+public class Telegram extends ServicoMensagemInstantanea{
+
+    @Override
+    public void enviarMensagem() {
+        System.out.println("Enviando mensagem pelo Telegram");
+    }
+
+    @Override
+    public void receberMensagem() {
+        System.out.println("Recebendo mensagem pelo Telegram");
+    }
     
 }
