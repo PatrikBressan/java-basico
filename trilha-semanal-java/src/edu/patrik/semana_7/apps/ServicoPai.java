@@ -1,4 +1,4 @@
-package edu.patrik.semana_7;
+package edu.patrik.semana_7.apps;
 
 public class ServicoPai {
     public void enviarMensagem(){

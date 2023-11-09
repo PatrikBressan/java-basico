@@ -1,5 +1,9 @@
 package edu.patrik.semana_7;
 
+import edu.patrik.semana_7.apps.FacebookMessenger;
+import edu.patrik.semana_7.apps.MSNMessenger;
+import edu.patrik.semana_7.apps.Telegram;
+
 public class ComputadorBressan {
     public static void main(String[] args) {
         MSNMessenger msn = new MSNMessenger();
