@@ -1,4 +1,4 @@
-package edu.patrik.projeto_Live;
+package edu.patrik.projeto_Live.dominio;
 
 public class curso extends conteudoEducacional{
     private int cargaHoraria;
@@ -9,4 +9,10 @@ public class curso extends conteudoEducacional{
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO * cargaHoraria;
+    }
+
+    
 }

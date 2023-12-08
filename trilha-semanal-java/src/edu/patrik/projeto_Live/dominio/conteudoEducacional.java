@@ -1,6 +1,8 @@
-package edu.patrik.projeto_Live;
+package edu.patrik.projeto_Live.dominio;
 
 public abstract class conteudoEducacional {
+    protected static final double XP_PADRAO = 10.0;
+    
     private String titulo;
     private String descricao;
 
@@ -16,5 +18,7 @@ public abstract class conteudoEducacional {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public abstract double calcularXp();
     
 }

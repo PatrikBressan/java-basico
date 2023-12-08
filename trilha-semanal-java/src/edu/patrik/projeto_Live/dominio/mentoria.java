@@ -1,4 +1,4 @@
-package edu.patrik.projeto_Live;
+package edu.patrik.projeto_Live.dominio;
 
 import java.time.LocalDateTime;
 
@@ -10,5 +10,10 @@ public class mentoria extends conteudoEducacional{
     }
     public void setData(LocalDateTime data) {
         this.data = data;
+    }
+
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO;
     }
 }
